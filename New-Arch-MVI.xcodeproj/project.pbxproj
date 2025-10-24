@@ -6,23 +6,156 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A0424B3A2EA9907600CB457A /* New_Arch_MVI_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */; };
+		A0424B3F2EA990C900CB457A /* New_Arch_MVI_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */; };
+		A0424B442EA990FC00CB457A /* New_Arch_MVI_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AC32EA9885C00CB457A /* New_Arch_MVI_Api.framework */; };
+		A0424B452EA990FC00CB457A /* New_Arch_MVI_Api.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AC32EA9885C00CB457A /* New_Arch_MVI_Api.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0424B482EA990FC00CB457A /* New_Arch_MVI_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AFA2EA9889F00CB457A /* New_Arch_MVI_Data.framework */; };
+		A0424B492EA990FC00CB457A /* New_Arch_MVI_Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AFA2EA9889F00CB457A /* New_Arch_MVI_Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0424B4C2EA990FC00CB457A /* New_Arch_MVI_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */; };
+		A0424B4D2EA990FC00CB457A /* New_Arch_MVI_Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0424B502EA990FC00CB457A /* New_Arch_MVI_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */; };
+		A0424B512EA990FC00CB457A /* New_Arch_MVI_Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0424B3C2EA9907600CB457A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0424AA82EA9883200CB457A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0424AE72EA9889300CB457A;
+			remoteInfo = "New-Arch-MVI-Domain";
+		};
+		A0424B412EA990C900CB457A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0424AA82EA9883200CB457A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0424AE72EA9889300CB457A;
+			remoteInfo = "New-Arch-MVI-Domain";
+		};
+		A0424B462EA990FC00CB457A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0424AA82EA9883200CB457A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0424AC22EA9885C00CB457A;
+			remoteInfo = "New-Arch-MVI-Api";
+		};
+		A0424B4A2EA990FC00CB457A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0424AA82EA9883200CB457A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0424AF92EA9889F00CB457A;
+			remoteInfo = "New-Arch-MVI-Data";
+		};
+		A0424B4E2EA990FC00CB457A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0424AA82EA9883200CB457A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0424AE72EA9889300CB457A;
+			remoteInfo = "New-Arch-MVI-Domain";
+		};
+		A0424B522EA990FC00CB457A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0424AA82EA9883200CB457A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0424AD52EA9888600CB457A;
+			remoteInfo = "New-Arch-MVI-Presentation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0424B542EA990FC00CB457A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0424B512EA990FC00CB457A /* New_Arch_MVI_Presentation.framework in Embed Frameworks */,
+				A0424B492EA990FC00CB457A /* New_Arch_MVI_Data.framework in Embed Frameworks */,
+				A0424B4D2EA990FC00CB457A /* New_Arch_MVI_Domain.framework in Embed Frameworks */,
+				A0424B452EA990FC00CB457A /* New_Arch_MVI_Api.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A0424AB02EA9883200CB457A /* New-Arch-MVI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New-Arch-MVI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0424AC32EA9885C00CB457A /* New_Arch_MVI_Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = New_Arch_MVI_Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = New_Arch_MVI_Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = New_Arch_MVI_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0424AFA2EA9889F00CB457A /* New_Arch_MVI_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = New_Arch_MVI_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0424B0B2EA9890400CB457A /* New-Arch-MVI-Showroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New-Arch-MVI-Showroom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A0424AB22EA9883200CB457A /* New-Arch-MVI */ = {
+		A0424AC42EA9885C00CB457A /* New-Arch-MVI-Api */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "New-Arch-MVI";
+			path = "New-Arch-MVI-Api";
+			sourceTree = "<group>";
+		};
+		A0424AD72EA9888600CB457A /* New-Arch-MVI-Presentation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "New-Arch-MVI-Presentation";
+			sourceTree = "<group>";
+		};
+		A0424AE92EA9889300CB457A /* New-Arch-MVI-Domain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "New-Arch-MVI-Domain";
+			sourceTree = "<group>";
+		};
+		A0424AFB2EA9889F00CB457A /* New-Arch-MVI-Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "New-Arch-MVI-Data";
+			sourceTree = "<group>";
+		};
+		A0424B0C2EA9890400CB457A /* New-Arch-MVI-Showroom */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "New-Arch-MVI-Showroom";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A0424AAD2EA9883200CB457A /* Frameworks */ = {
+		A0424AC02EA9885C00CB457A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AD32EA9888600CB457A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0424B3A2EA9907600CB457A /* New_Arch_MVI_Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AE52EA9889300CB457A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AF72EA9889F00CB457A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0424B3F2EA990C900CB457A /* New_Arch_MVI_Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424B082EA9890400CB457A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0424B502EA990FC00CB457A /* New_Arch_MVI_Presentation.framework in Frameworks */,
+				A0424B482EA990FC00CB457A /* New_Arch_MVI_Data.framework in Frameworks */,
+				A0424B4C2EA990FC00CB457A /* New_Arch_MVI_Domain.framework in Frameworks */,
+				A0424B442EA990FC00CB457A /* New_Arch_MVI_Api.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +165,12 @@
 		A0424AA72EA9883200CB457A = {
 			isa = PBXGroup;
 			children = (
-				A0424AB22EA9883200CB457A /* New-Arch-MVI */,
+				A0424AC42EA9885C00CB457A /* New-Arch-MVI-Api */,
+				A0424AD72EA9888600CB457A /* New-Arch-MVI-Presentation */,
+				A0424AE92EA9889300CB457A /* New-Arch-MVI-Domain */,
+				A0424AFB2EA9889F00CB457A /* New-Arch-MVI-Data */,
+				A0424B0C2EA9890400CB457A /* New-Arch-MVI-Showroom */,
+				A0424B392EA9907600CB457A /* Frameworks */,
 				A0424AB12EA9883200CB457A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,34 +178,175 @@
 		A0424AB12EA9883200CB457A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0424AB02EA9883200CB457A /* New-Arch-MVI.app */,
+				A0424AC32EA9885C00CB457A /* New_Arch_MVI_Api.framework */,
+				A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */,
+				A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */,
+				A0424AFA2EA9889F00CB457A /* New_Arch_MVI_Data.framework */,
+				A0424B0B2EA9890400CB457A /* New-Arch-MVI-Showroom.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A0424B392EA9907600CB457A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A0424ABE2EA9885C00CB457A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AD12EA9888600CB457A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AE32EA9889300CB457A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AF52EA9889F00CB457A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		A0424AAF2EA9883200CB457A /* New-Arch-MVI */ = {
+		A0424AC22EA9885C00CB457A /* New-Arch-MVI-Api */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0424ABB2EA9883300CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI" */;
+			buildConfigurationList = A0424ACD2EA9885C00CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Api" */;
 			buildPhases = (
-				A0424AAC2EA9883200CB457A /* Sources */,
-				A0424AAD2EA9883200CB457A /* Frameworks */,
-				A0424AAE2EA9883200CB457A /* Resources */,
+				A0424ABE2EA9885C00CB457A /* Headers */,
+				A0424ABF2EA9885C00CB457A /* Sources */,
+				A0424AC02EA9885C00CB457A /* Frameworks */,
+				A0424AC12EA9885C00CB457A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A0424AB22EA9883200CB457A /* New-Arch-MVI */,
+				A0424AC42EA9885C00CB457A /* New-Arch-MVI-Api */,
 			);
-			name = "New-Arch-MVI";
+			name = "New-Arch-MVI-Api";
 			packageProductDependencies = (
 			);
-			productName = "New-Arch-MVI";
-			productReference = A0424AB02EA9883200CB457A /* New-Arch-MVI.app */;
+			productName = "New-Arch-MVI-Api";
+			productReference = A0424AC32EA9885C00CB457A /* New_Arch_MVI_Api.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0424AD52EA9888600CB457A /* New-Arch-MVI-Presentation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0424AE02EA9888600CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Presentation" */;
+			buildPhases = (
+				A0424AD12EA9888600CB457A /* Headers */,
+				A0424AD22EA9888600CB457A /* Sources */,
+				A0424AD32EA9888600CB457A /* Frameworks */,
+				A0424AD42EA9888600CB457A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0424B3D2EA9907600CB457A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A0424AD72EA9888600CB457A /* New-Arch-MVI-Presentation */,
+			);
+			name = "New-Arch-MVI-Presentation";
+			packageProductDependencies = (
+			);
+			productName = "New-Arch-MVI-Presentation";
+			productReference = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0424AE72EA9889300CB457A /* New-Arch-MVI-Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0424AF22EA9889300CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Domain" */;
+			buildPhases = (
+				A0424AE32EA9889300CB457A /* Headers */,
+				A0424AE42EA9889300CB457A /* Sources */,
+				A0424AE52EA9889300CB457A /* Frameworks */,
+				A0424AE62EA9889300CB457A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A0424AE92EA9889300CB457A /* New-Arch-MVI-Domain */,
+			);
+			name = "New-Arch-MVI-Domain";
+			packageProductDependencies = (
+			);
+			productName = "New-Arch-MVI-Domain";
+			productReference = A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0424AF92EA9889F00CB457A /* New-Arch-MVI-Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0424B042EA9889F00CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Data" */;
+			buildPhases = (
+				A0424AF52EA9889F00CB457A /* Headers */,
+				A0424AF62EA9889F00CB457A /* Sources */,
+				A0424AF72EA9889F00CB457A /* Frameworks */,
+				A0424AF82EA9889F00CB457A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0424B422EA990C900CB457A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A0424AFB2EA9889F00CB457A /* New-Arch-MVI-Data */,
+			);
+			name = "New-Arch-MVI-Data";
+			packageProductDependencies = (
+			);
+			productName = "New-Arch-MVI-Data";
+			productReference = A0424AFA2EA9889F00CB457A /* New_Arch_MVI_Data.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0424B0A2EA9890400CB457A /* New-Arch-MVI-Showroom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0424B132EA9890500CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Showroom" */;
+			buildPhases = (
+				A0424B072EA9890400CB457A /* Sources */,
+				A0424B082EA9890400CB457A /* Frameworks */,
+				A0424B092EA9890400CB457A /* Resources */,
+				A0424B542EA990FC00CB457A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0424B472EA990FC00CB457A /* PBXTargetDependency */,
+				A0424B4B2EA990FC00CB457A /* PBXTargetDependency */,
+				A0424B4F2EA990FC00CB457A /* PBXTargetDependency */,
+				A0424B532EA990FC00CB457A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A0424B0C2EA9890400CB457A /* New-Arch-MVI-Showroom */,
+			);
+			name = "New-Arch-MVI-Showroom";
+			packageProductDependencies = (
+			);
+			productName = "New-Arch-MVI-Showroom";
+			productReference = A0424B0B2EA9890400CB457A /* New-Arch-MVI-Showroom.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -80,7 +359,22 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
-					A0424AAF2EA9883200CB457A = {
+					A0424AC22EA9885C00CB457A = {
+						CreatedOnToolsVersion = 26.0.1;
+						LastSwiftMigration = 2600;
+					};
+					A0424AD52EA9888600CB457A = {
+						CreatedOnToolsVersion = 26.0.1;
+						LastSwiftMigration = 2600;
+					};
+					A0424AE72EA9889300CB457A = {
+						CreatedOnToolsVersion = 26.0.1;
+						LastSwiftMigration = 2600;
+					};
+					A0424AF92EA9889F00CB457A = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					A0424B0A2EA9890400CB457A = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
@@ -94,18 +388,53 @@
 			);
 			mainGroup = A0424AA72EA9883200CB457A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A04477AD2EAAD61E00E9EBCD /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A0424AB12EA9883200CB457A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A0424AAF2EA9883200CB457A /* New-Arch-MVI */,
+				A0424AC22EA9885C00CB457A /* New-Arch-MVI-Api */,
+				A0424AD52EA9888600CB457A /* New-Arch-MVI-Presentation */,
+				A0424AE72EA9889300CB457A /* New-Arch-MVI-Domain */,
+				A0424AF92EA9889F00CB457A /* New-Arch-MVI-Data */,
+				A0424B0A2EA9890400CB457A /* New-Arch-MVI-Showroom */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A0424AAE2EA9883200CB457A /* Resources */ = {
+		A0424AC12EA9885C00CB457A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AD42EA9888600CB457A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AE62EA9889300CB457A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AF82EA9889F00CB457A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424B092EA9890400CB457A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +444,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A0424AAC2EA9883200CB457A /* Sources */ = {
+		A0424ABF2EA9885C00CB457A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AD22EA9888600CB457A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AE42EA9889300CB457A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424AF62EA9889F00CB457A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0424B072EA9890400CB457A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,6 +480,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0424B3D2EA9907600CB457A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0424AE72EA9889300CB457A /* New-Arch-MVI-Domain */;
+			targetProxy = A0424B3C2EA9907600CB457A /* PBXContainerItemProxy */;
+		};
+		A0424B422EA990C900CB457A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0424AE72EA9889300CB457A /* New-Arch-MVI-Domain */;
+			targetProxy = A0424B412EA990C900CB457A /* PBXContainerItemProxy */;
+		};
+		A0424B472EA990FC00CB457A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0424AC22EA9885C00CB457A /* New-Arch-MVI-Api */;
+			targetProxy = A0424B462EA990FC00CB457A /* PBXContainerItemProxy */;
+		};
+		A0424B4B2EA990FC00CB457A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0424AF92EA9889F00CB457A /* New-Arch-MVI-Data */;
+			targetProxy = A0424B4A2EA990FC00CB457A /* PBXContainerItemProxy */;
+		};
+		A0424B4F2EA990FC00CB457A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0424AE72EA9889300CB457A /* New-Arch-MVI-Domain */;
+			targetProxy = A0424B4E2EA990FC00CB457A /* PBXContainerItemProxy */;
+		};
+		A0424B532EA990FC00CB457A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0424AD52EA9888600CB457A /* New-Arch-MVI-Presentation */;
+			targetProxy = A0424B522EA990FC00CB457A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A0424AB92EA9883300CB457A /* Debug */ = {
@@ -241,51 +631,406 @@
 			};
 			name = Release;
 		};
-		A0424ABC2EA9883300CB457A /* Debug */ = {
+		A0424ACE2EA9885C00CB457A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F4U6C4J697;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Api";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
+				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
-		A0424ABD2EA9883300CB457A /* Release */ = {
+		A0424ACF2EA9885C00CB457A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F4U6C4J697;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Api";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		A0424AE12EA9888600CB457A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F4U6C4J697;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Presentation";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		A0424AE22EA9888600CB457A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F4U6C4J697;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Presentation";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		A0424AF32EA9889300CB457A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F4U6C4J697;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Domain";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		A0424AF42EA9889300CB457A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F4U6C4J697;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Domain";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		A0424B052EA9889F00CB457A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4U6C4J697;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Data";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		A0424B062EA9889F00CB457A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4U6C4J697;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Data";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		A0424B142EA9890500CB457A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -306,25 +1051,69 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI";
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Showroom";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		A0424B152EA9890500CB457A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4U6C4J697;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bog.New-Arch-MVI-Showroom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
@@ -341,16 +1130,63 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0424ABB2EA9883300CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI" */ = {
+		A0424ACD2EA9885C00CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Api" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0424ABC2EA9883300CB457A /* Debug */,
-				A0424ABD2EA9883300CB457A /* Release */,
+				A0424ACE2EA9885C00CB457A /* Debug */,
+				A0424ACF2EA9885C00CB457A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0424AE02EA9888600CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Presentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0424AE12EA9888600CB457A /* Debug */,
+				A0424AE22EA9888600CB457A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0424AF22EA9889300CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0424AF32EA9889300CB457A /* Debug */,
+				A0424AF42EA9889300CB457A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0424B042EA9889F00CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0424B052EA9889F00CB457A /* Debug */,
+				A0424B062EA9889F00CB457A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0424B132EA9890500CB457A /* Build configuration list for PBXNativeTarget "New-Arch-MVI-Showroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0424B142EA9890500CB457A /* Debug */,
+				A0424B152EA9890500CB457A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A04477AD2EAAD61E00E9EBCD /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = A0424AA82EA9883200CB457A /* Project object */;
 }
