@@ -12,6 +12,7 @@ struct MovieListView<ViewModel: MovieListViewModel>: View {
     
     var viewModel: ViewModel
     
+    // MARK: - Body
     var body: some View {
         ScrollView {
             LazyVGrid(
