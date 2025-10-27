@@ -5,7 +5,7 @@
 //  Created by Tornike Bardadze on 23.10.25.
 //
 
-import Foundation
+import New_Arch_MVI_PresentationCore
 
 // MARK: - MovieListViewFactory
 protocol MovieListViewFactory: ViewFactory where
@@ -22,11 +22,4 @@ final class DefaultMovieListViewFactory: MovieListViewFactory {
         return MovieListView(viewModel: viewModel)
     }
     
-}
-
-
-protocol ViewFactory {
-    associatedtype Parameters
-    associatedtype View
-    func make(parameters: Parameters) -> View
 }

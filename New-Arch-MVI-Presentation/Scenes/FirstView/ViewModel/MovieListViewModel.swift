@@ -7,6 +7,7 @@
 
 import Observation
 import New_Arch_MVI_Domain
+import New_Arch_MVI_PresentationCore
 import Foundation
 
 // MARK: - Parameters
@@ -14,8 +15,7 @@ public struct MovieListViewModelParameters { }
 
 // MARK: - State
 struct MovieListViewModelState {
-    var data: MovieItemList
-//    var isLoading: Bool
+    var data: ViewModelState<MovieItemList>
 }
 
 // MARK: - SideEffect
@@ -44,21 +44,24 @@ final class DefaultMovieListViewModel: MovieListViewModel {
     var onSideEffect: ((MovieListViewModelSideEffect) -> Void)?
     
     init(parameters: MovieListViewModelParameters) {
-        state = .init(data: .init(movies: []))
+        state = .init(data: .loading)
     }
     
     func onLoad() {
+        state.data = .loading
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 2_000_000_000)
-            state.data = .init(
-                movies: moviesData.map { movie in
-                        .init(
-                            id: UUID(),
-                            url: movie.url,
-                            title: movie.title,
-                            description: movie.description
-                        )
-                }
+            state.data = .success(
+                .init(
+                    movies: moviesData.map { movie in
+                            .init(
+                                id: UUID(),
+                                url: movie.url,
+                                title: movie.title,
+                                description: movie.description
+                            )
+                    }
+                )
             )
         }
     }
@@ -68,7 +71,7 @@ final class DefaultMovieListViewModel: MovieListViewModel {
         case .didSelectMovie:
             print("didSelectMovie")
         case .removeAll:
-            state.data = .init(movies: [])
+            state.data = .success(.init(movies: []))
         }
     }
     
@@ -77,11 +80,6 @@ final class DefaultMovieListViewModel: MovieListViewModel {
         title: String,
         description: String
     )] = [
-        (
-            "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
-            "Interstellar",
-            "A team of explorers travel beyond this galaxy to discover whether mankind has a future among the stars."
-        ),
         (
             "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
             "The Dark Knight",
@@ -131,43 +129,36 @@ final class DefaultMovieListViewModel: MovieListViewModel {
             "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
             "The Matrix",
             "A hacker discovers the world he knows is a simulation and joins a rebellion against its creators."
+        ),
+        (
+            "https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
+            "Guardians of the Galaxy Vol. 3",
+            "The Guardians must band together to protect one of their own while facing a dangerous new enemy."
+        ),
+        (
+            "https://image.tmdb.org/t/p/w500/drlfSCIlMKrEeMPhi8pqY4xGxj.jpg",
+            "Inception",
+            "A skilled thief enters people’s dreams to steal secrets, but a final mission could cost everything."
+        ),
+        (
+            "https://image.tmdb.org/t/p/w500/v5CfpzxoJDkZxjZAizClFdlEF0U.jpg",
+            "The Social Network",
+            "The creation of Facebook sparks innovation, conflict, and legal battles."
+        ),
+        (
+            "https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg",
+            "Spirited Away",
+            "A young girl becomes trapped in a mysterious spirit world and must find her way home."
+        ),
+        (
+            "https://image.tmdb.org/t/p/w500/7lyBcpYB0Qt8gYhXYaEZUNlNQAv.jpg",
+            "Pulp Fiction",
+            "Multiple crime stories intertwine in a bold, nonlinear narrative."
+        ),
+        (
+            "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+            "Star Wars: A New Hope",
+            "A farm boy joins rebels in the battle against a powerful galactic empire."
         )
     ]
-
-    
-}
-
-
-
-
-
-protocol ViewModel: ViewModelInput, ViewModelOutput, ViewModelSideEffect {
-    associatedtype Parameters
-    init(parameters: Parameters)
-    func onLoad()
-    func onAppear()
-}
-
-// Temporary
-extension ViewModel {
-    func onAppear() {
-        
-    }
-}
-
-protocol ViewModelInput {
-    associatedtype Intent
-    
-    /// Handles UI-driven actions (Intents)
-    func handleIntent(_ intent: Intent)
-}
-
-protocol ViewModelOutput {
-    associatedtype State
-    var state: State { get }
-}
-
-protocol ViewModelSideEffect {
-    associatedtype SideEffect
-    var onSideEffect: ((SideEffect) -> Void)? { get set }
 }

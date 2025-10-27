@@ -17,6 +17,7 @@
 		A0424B4D2EA990FC00CB457A /* New_Arch_MVI_Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A0424B502EA990FC00CB457A /* New_Arch_MVI_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */; };
 		A0424B512EA990FC00CB457A /* New_Arch_MVI_Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A06CE7872EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore in Frameworks */ = {isa = PBXBuildFile; productRef = A06CE7862EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0424B3A2EA9907600CB457A /* New_Arch_MVI_Domain.framework in Frameworks */,
+				A06CE7872EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +272,7 @@
 			);
 			name = "New-Arch-MVI-Presentation";
 			packageProductDependencies = (
+				A06CE7862EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore */,
 			);
 			productName = "New-Arch-MVI-Presentation";
 			productReference = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */;
@@ -391,6 +394,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A04477AD2EAAD61E00E9EBCD /* XCRemoteSwiftPackageReference "Factory" */,
+				A06CE7852EAE7F09009E73B2 /* XCRemoteSwiftPackageReference "New-Arch-MVI-PresentationCore" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A0424AB12EA9883200CB457A /* Products */;
@@ -1192,7 +1196,23 @@
 				minimumVersion = 2.5.3;
 			};
 		};
+		A06CE7852EAE7F09009E73B2 /* XCRemoteSwiftPackageReference "New-Arch-MVI-PresentationCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iradell/New-Arch-MVI-PresentationCore";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A06CE7862EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A06CE7852EAE7F09009E73B2 /* XCRemoteSwiftPackageReference "New-Arch-MVI-PresentationCore" */;
+			productName = "New-Arch-MVI-PresentationCore";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0424AA82EA9883200CB457A /* Project object */;
 }

@@ -1,5 +1,5 @@
 {
-  "originHash" : "84df9aa6ecd399d508c396fac25a34900ac329702697849f1f833cbdd041bee1",
+  "originHash" : "d8b71cf5859b7b69c8b866e51bc3a9f7442412f5ca54707a3b3c11c4e05484d5",
   "pins" : [
     {
       "identity" : "factory",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "ccc898f21992ebc130bc04cc197460a5ae230bcf",
         "version" : "2.5.3"
+      }
+    },
+    {
+      "identity" : "new-arch-mvi-presentationcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iradell/New-Arch-MVI-PresentationCore",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9d43e4798abd443257383907981f0cc500cdf1e0"
       }
     }
   ],
