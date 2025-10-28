@@ -16,6 +16,7 @@ struct MovieListView<ViewModel: MovieListViewModel>: View {
     // MARK: - Body
     var body: some View {
         content
+            .withNavigation()
             .task {
                 viewModel.onLoad()
             }
