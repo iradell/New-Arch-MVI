@@ -9,6 +9,7 @@ import New_Arch_MVI_Api
 import SwiftUI
 internal import FactoryKit
 internal import New_Arch_MVI_PresentationCore
+internal import New_Arch_MVI_Navigation
 
 public class DefaultFirstViewFlowCoordinator: FirstViewFlowCoordinator {
     

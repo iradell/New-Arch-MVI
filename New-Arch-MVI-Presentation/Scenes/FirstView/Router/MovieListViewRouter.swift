@@ -6,6 +6,7 @@
 //
 
 internal import FactoryKit
+internal import New_Arch_MVI_Navigation
 
 public protocol MovieListViewRouter: AnyObject {
     func navigateToMovieDetails(withId: String)

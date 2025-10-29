@@ -1,5 +1,5 @@
 {
-  "originHash" : "d8b71cf5859b7b69c8b866e51bc3a9f7442412f5ca54707a3b3c11c4e05484d5",
+  "originHash" : "2c0f199577489746b4a3a62fbd0bc7466db8c7ff33f02a6e31bd74fcebbd7ea7",
   "pins" : [
     {
       "identity" : "factory",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "ccc898f21992ebc130bc04cc197460a5ae230bcf",
         "version" : "2.5.3"
+      }
+    },
+    {
+      "identity" : "new-arch-mvi-navigation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iradell/New-Arch-MVI-Navigation.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "75779766341a118b4bbf909c38b7becb263b39da"
       }
     },
     {

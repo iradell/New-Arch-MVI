@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+internal import New_Arch_MVI_Navigation
 
 struct AppDestinationResolver: DestinationResolver {
     func view(for destination: AppDestination) -> some View {

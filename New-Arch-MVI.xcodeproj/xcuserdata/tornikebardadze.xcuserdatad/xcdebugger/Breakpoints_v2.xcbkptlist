@@ -30,25 +30,9 @@
             filePath = "New-Arch-MVI-Presentation/Scenes/FirstView/Router/MovieListViewRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "navigateToMovieDetails(withId:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8FE24F16-A0C4-40A6-9450-DE30EB0D063F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "New-Arch-MVI-Presentation/FlowCoordinator/DefaultFirstViewFlowCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "firstView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -62,8 +46,8 @@
             filePath = "New-Arch-MVI-Presentation/Navigation/Navigation Container/NavigationContainer.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -80,8 +64,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "navigate(to:)"
-            landmarkType = "7">
+            landmarkName = "DefaultNavigator"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

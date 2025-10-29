@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00749EB2EB2A97600E50645 /* New-Arch-MVI-Navigation in Frameworks */ = {isa = PBXBuildFile; productRef = A00749EA2EB2A97600E50645 /* New-Arch-MVI-Navigation */; };
 		A0424B3A2EA9907600CB457A /* New_Arch_MVI_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */; };
 		A0424B3F2EA990C900CB457A /* New_Arch_MVI_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */; };
 		A0424B442EA990FC00CB457A /* New_Arch_MVI_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AC32EA9885C00CB457A /* New_Arch_MVI_Api.framework */; };
@@ -142,6 +143,7 @@
 			files = (
 				A070CDE72EB1849400D37A60 /* FactoryKit in Frameworks */,
 				A070CDE82EB1941D00D37A60 /* New_Arch_MVI_Api.framework in Frameworks */,
+				A00749EB2EB2A97600E50645 /* New-Arch-MVI-Navigation in Frameworks */,
 				A0424B3A2EA9907600CB457A /* New_Arch_MVI_Domain.framework in Frameworks */,
 				A06CE7872EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore in Frameworks */,
 			);
@@ -288,6 +290,7 @@
 			packageProductDependencies = (
 				A06CE7862EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore */,
 				A070CDE62EB1849400D37A60 /* FactoryKit */,
+				A00749EA2EB2A97600E50645 /* New-Arch-MVI-Navigation */,
 			);
 			productName = "New-Arch-MVI-Presentation";
 			productReference = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */;
@@ -411,6 +414,7 @@
 			packageReferences = (
 				A04477AD2EAAD61E00E9EBCD /* XCRemoteSwiftPackageReference "Factory" */,
 				A06CE7852EAE7F09009E73B2 /* XCRemoteSwiftPackageReference "New-Arch-MVI-PresentationCore" */,
+				A00749E92EB2A97600E50645 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Navigation" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A0424AB12EA9883200CB457A /* Products */;
@@ -1211,6 +1215,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A00749E92EB2A97600E50645 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iradell/New-Arch-MVI-Navigation.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		A04477AD2EAAD61E00E9EBCD /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Factory.git";
@@ -1230,6 +1242,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A00749EA2EB2A97600E50645 /* New-Arch-MVI-Navigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00749E92EB2A97600E50645 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Navigation" */;
+			productName = "New-Arch-MVI-Navigation";
+		};
 		A06CE7862EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A06CE7852EAE7F09009E73B2 /* XCRemoteSwiftPackageReference "New-Arch-MVI-PresentationCore" */;
