@@ -7,6 +7,7 @@
 
 import SwiftUI
 internal import FactoryKit
+
 struct NavigationContainer<Resolver: DestinationResolver, Navigation: Navigator, Content: View>: View
 where Navigation.Destination == Resolver.Destination {
 

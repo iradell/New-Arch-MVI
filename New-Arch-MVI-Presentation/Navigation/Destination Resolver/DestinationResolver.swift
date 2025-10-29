@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-protocol DestinationResolver {
+public protocol DestinationResolver {
     associatedtype Destination: Hashable & Identifiable
     associatedtype DestinationView: View
     

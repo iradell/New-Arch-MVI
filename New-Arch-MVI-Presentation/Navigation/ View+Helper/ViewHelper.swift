@@ -8,10 +8,13 @@
 import SwiftUI
 
 extension View {
-    func withNavigation(navigation: any Navigator, using resolver: any DestinationResolver) -> some View {
+    func withNavigation<Navigation: Navigator, Resolver: DestinationResolver>(
+        navigator: Navigation,
+        resolver: Resolver
+    ) -> some View where Navigation.Destination == Resolver.Destination {
         NavigationContainer(
-            resolver: AppDestinationResolver(),
-            navigator: DefaultNavigator<AppDestination>()
+            resolver: resolver,
+            navigator: navigator
         ) {
             self
         }

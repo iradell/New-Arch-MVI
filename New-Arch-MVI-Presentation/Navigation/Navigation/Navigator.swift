@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-protocol Navigator {
+public protocol Navigator: AnyObject {
     associatedtype Destination: Hashable & Identifiable
 
     var path: NavigationPath { get set }
@@ -23,21 +23,29 @@ protocol Navigator {
 }
 
 @Observable
-class DefaultNavigator<Destination: Hashable & Identifiable>: Navigator {
-    var path = NavigationPath()
-    var presentedSheet: Destination? = nil
-    var presentedFullScreen: Destination? = nil
+public class DefaultNavigator<Destination: Hashable & Identifiable>: Navigator {
+    public var path = NavigationPath()
+    public var presentedSheet: Destination? = nil
+    public var presentedFullScreen: Destination? = nil
     
-    func navigate(to destination: Destination) {
-          var newPath = path
-          newPath.append(destination)
-          path = newPath
-      }
+    public func navigate(to destination: Destination) {
+        path.append(destination)
+    }
     
-    func presentSheet(_ destination: Destination) { presentedSheet = destination }
-    func presentFullScreen(_ destination: Destination) { presentedFullScreen = destination }
+    public func presentSheet(_ destination: Destination) {
+        presentedSheet = destination
+    }
     
-    func pop() { path.removeLast() }
-    func popToRoot() { path = NavigationPath() }
+    public func presentFullScreen(_ destination: Destination) {
+        presentedFullScreen = destination
+    }
+    
+    public func pop() {
+        path.removeLast()
+    }
+    
+    public func popToRoot() {
+        path = NavigationPath()
+    }
 }
 
