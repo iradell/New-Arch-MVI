@@ -9,5 +9,7 @@ import SwiftUI
 
 public protocol FirstViewFlowCoordinator {
     associatedtype ModuleView: View
+    
+    @MainActor
     func firstView() -> ModuleView
 }

@@ -12,8 +12,7 @@ struct NavigationContainer<Resolver: DestinationResolver, Navigation: Navigator,
 where Navigation.Destination == Resolver.Destination {
 
     let resolver: Resolver
-    @State var navigator: Navigation
-
+    @Bindable var navigator: Navigation
     @ViewBuilder var content: () -> Content
 
     var body: some View {

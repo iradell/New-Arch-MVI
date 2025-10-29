@@ -21,5 +21,9 @@ struct New_Arch_MVI_ShowroomApp: App {
 }
 
 extension Container {
-    var factory: Factory<DefaultFirstViewFlowCoordinator> { self { DefaultFirstViewFlowCoordinator() } }
+    var factory: Factory<DefaultFirstViewFlowCoordinator> {
+        self {
+            DefaultFirstViewFlowCoordinator()
+        }
+    }
 }

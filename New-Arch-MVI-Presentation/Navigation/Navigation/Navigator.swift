@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public protocol Navigator: AnyObject {
+public protocol Navigator: AnyObject, Observable {
     associatedtype Destination: Hashable & Identifiable
 
     var path: NavigationPath { get set }
