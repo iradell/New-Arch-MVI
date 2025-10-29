@@ -15,12 +15,12 @@ public class DefaultFirstViewFlowCoordinator: FirstViewFlowCoordinator {
     
     @Injected(\.navigator) private var navigator
     @Injected(\.resolver) private var resolver
-    @Injected(\.factory) private var factory
+    @Injected(\.movieListFactory) private var firstViewFactory
     
     public init() { }
     
     public func firstView() -> some View {
-        factory
+        firstViewFactory
             .make(parameters: .init())
             .withNavigation(
                 navigator: navigator,

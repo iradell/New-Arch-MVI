@@ -12,13 +12,12 @@ public protocol MovieListViewRouter: AnyObject {
     func navigateToMovieDetails(withId: String)
 }
 
-
 public class DefaultMovieListViewRouter: MovieListViewRouter {
     
     @Injected(\.navigator) private var navigator
     
     public func navigateToMovieDetails(withId: String) {
-        navigator.navigate(to: .movieDetials)
+        navigator.navigate(to: .movieDetials(.init(description: withId)))
     }
     
 }

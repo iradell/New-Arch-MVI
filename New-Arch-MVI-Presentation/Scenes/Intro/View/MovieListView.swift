@@ -118,22 +118,3 @@ struct MovieListView<ViewModel: MovieListViewModel>: View {
         )
     )
 }
-
-
-
-
-/// Protocol FLor Runner
-/// Swiftu UI views
-/// UIKi View .hosted()
-
-
-/// Default flow runner factory : Protocol
-///  DefaultNavigtaror<Destination>
-///  Factory
-///
-///swift ui views
-///let view = Factory.make()  -> Views შექმნა ვიუმოდელით
-///return NavigationView(navigator: navigator, rootview: view)
-///
-///
-///ui kit views

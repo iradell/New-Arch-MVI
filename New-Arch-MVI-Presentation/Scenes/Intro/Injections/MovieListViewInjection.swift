@@ -8,6 +8,6 @@
 internal import FactoryKit
 
 extension Container {
-    var router: Factory<MovieListViewRouter> { self { DefaultMovieListViewRouter() } }
-    var factory: Factory<DefaultMovieListViewFactory> { self { DefaultMovieListViewFactory() } }
+    var movieListRouter: Factory<MovieListViewRouter> { self { DefaultMovieListViewRouter() } }
+    var movieListFactory: Factory<DefaultMovieListViewFactory> { self { DefaultMovieListViewFactory() } }
 }

@@ -41,7 +41,7 @@ protocol MovieListViewModel: ViewModel where
 final class DefaultMovieListViewModel: MovieListViewModel {
     
     @ObservationIgnored
-    @Injected(\.router) private var router
+    @Injected(\.movieListRouter) private var router
     
     var state: MovieListViewModelState
     

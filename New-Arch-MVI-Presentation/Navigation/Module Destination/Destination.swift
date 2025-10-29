@@ -6,12 +6,15 @@
 //
 
 enum AppDestination: Hashable, Identifiable {
-    case movieDetials
+    case movieDetials(DetailsViewModelParameters)
+    case subscriptionPlanDetails
     
     var id: String {
         switch self {
         case .movieDetials:
             "movieDetials"
+        case .subscriptionPlanDetails:
+            "subscriptionPlanDetails"
         }
     }
 }
