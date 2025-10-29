@@ -1,5 +1,5 @@
 //
-//  DestinationResolver.swift
+//  AppDestinationResolver.swift
 //  New-Arch-MVI-Presentation
 //
 //  Created by Giorgi Obgaidze on 27.10.25.

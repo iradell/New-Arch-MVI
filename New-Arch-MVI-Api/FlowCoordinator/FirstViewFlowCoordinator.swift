@@ -5,4 +5,9 @@
 //  Created by Tornike Bardadze on 23.10.25.
 //
 
-import Foundation
+import SwiftUI
+
+public protocol FirstViewFlowCoordinator {
+    associatedtype ModuleView: View
+    func firstView() -> ModuleView
+}

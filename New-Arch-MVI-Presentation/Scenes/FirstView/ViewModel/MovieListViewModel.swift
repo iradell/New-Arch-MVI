@@ -7,7 +7,8 @@
 
 import Observation
 import New_Arch_MVI_Domain
-import New_Arch_MVI_PresentationCore
+internal import New_Arch_MVI_PresentationCore
+internal import FactoryKit
 import Foundation
 
 // MARK: - Parameters
@@ -38,7 +39,10 @@ protocol MovieListViewModel: ViewModel where
     
 @Observable
 final class DefaultMovieListViewModel: MovieListViewModel {
-
+    
+    @ObservationIgnored
+    @Injected(\.router) private var router
+    
     var state: MovieListViewModelState
     
     var onSideEffect: ((MovieListViewModelSideEffect) -> Void)?
@@ -69,7 +73,7 @@ final class DefaultMovieListViewModel: MovieListViewModel {
     func handleIntent(_ intent: MovieListViewModelIntent) {
         switch intent {
         case .didSelectMovie:
-            print("didSelectMovie")
+            router.navigateToMovieDetails(withId: "withId")
         case .removeAll:
             state.data = .success(.init(movies: []))
         }

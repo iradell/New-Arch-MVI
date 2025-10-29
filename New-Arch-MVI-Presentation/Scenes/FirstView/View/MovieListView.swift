@@ -7,7 +7,7 @@
 
 import SwiftUI
 import New_Arch_MVI_Domain
-import New_Arch_MVI_PresentationCore
+internal import New_Arch_MVI_PresentationCore
 
 struct MovieListView<ViewModel: MovieListViewModel>: View {
     
@@ -16,7 +16,6 @@ struct MovieListView<ViewModel: MovieListViewModel>: View {
     // MARK: - Body
     var body: some View {
         content
-            .withNavigation()
             .task {
                 viewModel.onLoad()
             }
@@ -80,6 +79,9 @@ struct MovieListView<ViewModel: MovieListViewModel>: View {
                             url: URL(string: item.url)!,
                             title: item.title
                         )
+                        .onTapGesture {
+                            viewModel.handleIntent(.didSelectMovie)
+                        }
                     }
                 }
             }
@@ -116,3 +118,22 @@ struct MovieListView<ViewModel: MovieListViewModel>: View {
         )
     )
 }
+
+
+
+
+/// Protocol FLor Runner
+/// Swiftu UI views
+/// UIKi View .hosted()
+
+
+/// Default flow runner factory : Protocol
+///  DefaultNavigtaror<Destination>
+///  Factory
+///
+///swift ui views
+///let view = Factory.make()  -> Views შექმნა ვიუმოდელით
+///return NavigationView(navigator: navigator, rootview: view)
+///
+///
+///ui kit views

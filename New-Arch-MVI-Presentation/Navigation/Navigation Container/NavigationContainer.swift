@@ -7,23 +7,25 @@
 
 import SwiftUI
 internal import FactoryKit
+struct NavigationContainer<Resolver: DestinationResolver, Navigation: Navigator, Content: View>: View
+where Navigation.Destination == Resolver.Destination {
 
-struct NavigationContainer<Resolver: DestinationResolver, Content: View>: View {
-    @InjectedObservable(\.router) private var router
     let resolver: Resolver
+    @State var navigator: Navigation
+
     @ViewBuilder var content: () -> Content
-    
+
     var body: some View {
-        NavigationStack(path: $router.path) {
+        NavigationStack(path: $navigator.path) {
             content()
                 .navigationDestination(for: Resolver.Destination.self) { destination in
                     resolver.view(for: destination)
                 }
-                .sheet(item: $router.presentedSheet) { destination in
+                .sheet(item: $navigator.presentedSheet) { destination in
                     resolver.view(for: destination)
                 }
-                .fullScreenCover(item: $router.presentedFullScreen) { destination in
-                    //resolver.view(for: destination)
+                .fullScreenCover(item: $navigator.presentedFullScreen) { destination in
+                    resolver.view(for: destination)
                 }
         }
     }

@@ -18,6 +18,9 @@
 		A0424B502EA990FC00CB457A /* New_Arch_MVI_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */; };
 		A0424B512EA990FC00CB457A /* New_Arch_MVI_Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A06CE7872EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore in Frameworks */ = {isa = PBXBuildFile; productRef = A06CE7862EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore */; };
+		A070CDE72EB1849400D37A60 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = A070CDE62EB1849400D37A60 /* FactoryKit */; };
+		A070CDE82EB1941D00D37A60 /* New_Arch_MVI_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AC32EA9885C00CB457A /* New_Arch_MVI_Api.framework */; };
+		A070CDEE2EB1957D00D37A60 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = A070CDED2EB1957D00D37A60 /* FactoryKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A0424AD52EA9888600CB457A;
 			remoteInfo = "New-Arch-MVI-Presentation";
+		};
+		A070CDEA2EB1941D00D37A60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0424AA82EA9883200CB457A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0424AC22EA9885C00CB457A;
+			remoteInfo = "New-Arch-MVI-Api";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -130,6 +140,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A070CDE72EB1849400D37A60 /* FactoryKit in Frameworks */,
+				A070CDE82EB1941D00D37A60 /* New_Arch_MVI_Api.framework in Frameworks */,
 				A0424B3A2EA9907600CB457A /* New_Arch_MVI_Domain.framework in Frameworks */,
 				A06CE7872EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore in Frameworks */,
 			);
@@ -156,6 +168,7 @@
 			files = (
 				A0424B502EA990FC00CB457A /* New_Arch_MVI_Presentation.framework in Frameworks */,
 				A0424B482EA990FC00CB457A /* New_Arch_MVI_Data.framework in Frameworks */,
+				A070CDEE2EB1957D00D37A60 /* FactoryKit in Frameworks */,
 				A0424B4C2EA990FC00CB457A /* New_Arch_MVI_Domain.framework in Frameworks */,
 				A0424B442EA990FC00CB457A /* New_Arch_MVI_Api.framework in Frameworks */,
 			);
@@ -266,6 +279,7 @@
 			);
 			dependencies = (
 				A0424B3D2EA9907600CB457A /* PBXTargetDependency */,
+				A070CDEB2EB1941D00D37A60 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A0424AD72EA9888600CB457A /* New-Arch-MVI-Presentation */,
@@ -273,6 +287,7 @@
 			name = "New-Arch-MVI-Presentation";
 			packageProductDependencies = (
 				A06CE7862EAE7F09009E73B2 /* New-Arch-MVI-PresentationCore */,
+				A070CDE62EB1849400D37A60 /* FactoryKit */,
 			);
 			productName = "New-Arch-MVI-Presentation";
 			productReference = A0424AD62EA9888600CB457A /* New_Arch_MVI_Presentation.framework */;
@@ -347,6 +362,7 @@
 			);
 			name = "New-Arch-MVI-Showroom";
 			packageProductDependencies = (
+				A070CDED2EB1957D00D37A60 /* FactoryKit */,
 			);
 			productName = "New-Arch-MVI-Showroom";
 			productReference = A0424B0B2EA9890400CB457A /* New-Arch-MVI-Showroom.app */;
@@ -516,6 +532,11 @@
 			isa = PBXTargetDependency;
 			target = A0424AD52EA9888600CB457A /* New-Arch-MVI-Presentation */;
 			targetProxy = A0424B522EA990FC00CB457A /* PBXContainerItemProxy */;
+		};
+		A070CDEB2EB1941D00D37A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0424AC22EA9885C00CB457A /* New-Arch-MVI-Api */;
+			targetProxy = A070CDEA2EB1941D00D37A60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1211,6 +1232,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A06CE7852EAE7F09009E73B2 /* XCRemoteSwiftPackageReference "New-Arch-MVI-PresentationCore" */;
 			productName = "New-Arch-MVI-PresentationCore";
+		};
+		A070CDE62EB1849400D37A60 /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A04477AD2EAAD61E00E9EBCD /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
+		};
+		A070CDED2EB1957D00D37A60 /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A04477AD2EAAD61E00E9EBCD /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

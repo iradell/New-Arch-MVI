@@ -64,12 +64,6 @@ public struct MovieItemView: View {
             .scaleEffect(isPressed ? 0.96 : 1.0)
             .animation(.spring(response: 0.25), value: isPressed)
             .contentShape(Rectangle())
-            .onTapGesture {
-                isPressed.toggle()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                    isPressed.toggle()
-                }
-            }
 
             Text(title)
                 .font(.callout)

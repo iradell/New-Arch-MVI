@@ -8,6 +8,6 @@
 internal import FactoryKit
 
 extension Container {
-    var router: Factory<Router<AppDestination>> { self { Router<AppDestination>() }.singleton }
+    var navigator: Factory<DefaultNavigator<AppDestination>> { self { DefaultNavigator<AppDestination>() }.singleton }
     var resolver: Factory<AppDestinationResolver> { self { AppDestinationResolver() }.singleton }
 }

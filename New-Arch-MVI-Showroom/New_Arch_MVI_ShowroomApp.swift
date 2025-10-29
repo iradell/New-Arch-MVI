@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import New_Arch_MVI_Api
+import New_Arch_MVI_Presentation
+import FactoryKit
 
 @main
 struct New_Arch_MVI_ShowroomApp: App {
+    @Injected(\.factory) private var factory
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            factory.firstView()
         }
     }
+}
+
+extension Container {
+    var factory: Factory<DefaultFirstViewFlowCoordinator> { self { DefaultFirstViewFlowCoordinator() } }
 }
