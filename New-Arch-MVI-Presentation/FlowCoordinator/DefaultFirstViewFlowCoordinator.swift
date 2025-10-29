@@ -18,7 +18,6 @@ public class DefaultFirstViewFlowCoordinator: FirstViewFlowCoordinator {
     
     public init() { }
     
-    @MainActor
     public func firstView() -> some View {
         factory
             .make(parameters: .init())
