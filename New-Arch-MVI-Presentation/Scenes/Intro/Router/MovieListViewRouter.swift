@@ -9,15 +9,15 @@ internal import FactoryKit
 internal import New_Arch_MVI_Navigation
 
 public protocol MovieListViewRouter: AnyObject {
-    func navigateToMovieDetails(withId: String)
+    func navigateToMovieDetails(with model: DetailsViewModelParameters)
 }
 
 public class DefaultMovieListViewRouter: MovieListViewRouter {
     
     @Injected(\.navigator) private var navigator
     
-    public func navigateToMovieDetails(withId: String) {
-        navigator.navigate(to: .movieDetials(.init(description: withId)))
+    public func navigateToMovieDetails(with model: DetailsViewModelParameters) {
+        navigator.navigate(to: .movieDetials(model))
     }
     
 }

@@ -13,7 +13,8 @@ import Foundation
 
 // MARK: - Parameters
 public struct DetailsViewModelParameters: Equatable, Hashable {
-    var image: URL?
+    var image: URL
+    var title: String
     var description: String
 }
 

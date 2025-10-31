@@ -27,7 +27,7 @@ enum MovieListViewModelSideEffect {
 
 // MARK: - Intents
 enum MovieListViewModelIntent {
-    case didSelectMovie
+    case didSelectMovie(MovieItem)
     case removeAll
 }
 
@@ -72,8 +72,14 @@ final class DefaultMovieListViewModel: MovieListViewModel {
     
     func handleIntent(_ intent: MovieListViewModelIntent) {
         switch intent {
-        case .didSelectMovie:
-            router.navigateToMovieDetails(withId: "withId")
+        case .didSelectMovie(let movie):
+            router.navigateToMovieDetails(
+                with: .init(
+                    image: URL(string: movie.url)!,
+                    title: movie.title,
+                    description: movie.description
+                )
+            )
         case .removeAll:
             state.data = .success(.init(movies: []))
         }

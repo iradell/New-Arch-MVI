@@ -80,7 +80,7 @@ struct MovieListView<ViewModel: MovieListViewModel>: View {
                             title: item.title
                         )
                         .onTapGesture {
-                            viewModel.handleIntent(.didSelectMovie)
+                            viewModel.handleIntent(.didSelectMovie(item))
                         }
                     }
                 }
@@ -103,6 +103,9 @@ struct MovieListView<ViewModel: MovieListViewModel>: View {
                             url: URL(string: item.url)!,
                             title: item.title
                         )
+                        .onTapGesture {
+                            viewModel.handleIntent(.didSelectMovie(item))
+                        }
                     }
                 }
             }
