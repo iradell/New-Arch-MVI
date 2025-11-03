@@ -1,0 +1,59 @@
+name: Profile
+options:
+  bundleIdPrefix: com.yourcompany
+  deploymentTarget:
+    iOS: 17.0
+  createIntermediateGroups: true
+
+targets:
+  Profile-API:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Sources/Profile-API
+        type: folder
+
+  Profile-Domain:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Sources/Profile-Domain
+        type: folder
+    dependencies:
+      - target: Profile-API
+
+  Profile-Presentation:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Sources/Profile-Presentation
+        type: folder
+    dependencies:
+      - target: Profile-Domain
+      - target: Profile-API
+
+  Profile-Data:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Sources/Profile-Data
+        type: folder
+    dependencies:
+      - target: Profile-Domain
+      
+  Profile-Showroom:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Sources/Profile-Showroom
+        type: folder
+    dependencies:
+      - target: Profile-API
+      - target: Profile-Presentation
+      - target: Profile-Domain
+      - target: Profile-Data
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourcompany.Profile.showroom
+        INFOPLIST_FILE: Sources/Profile-Showroom/Info.plist

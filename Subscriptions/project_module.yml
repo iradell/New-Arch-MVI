@@ -1,0 +1,59 @@
+name: Subscriptions
+options:
+  bundleIdPrefix: com.yourcompany
+  deploymentTarget:
+    iOS: 17.0
+  createIntermediateGroups: true
+
+targets:
+  Subscriptions-API:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Sources/Subscriptions-API
+        type: folder
+
+  Subscriptions-Domain:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Sources/Subscriptions-Domain
+        type: folder
+    dependencies:
+      - target: Subscriptions-API
+
+  Subscriptions-Presentation:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Sources/Subscriptions-Presentation
+        type: folder
+    dependencies:
+      - target: Subscriptions-Domain
+      - target: Subscriptions-API
+
+  Subscriptions-Data:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Sources/Subscriptions-Data
+        type: folder
+    dependencies:
+      - target: Subscriptions-Domain
+      
+  Subscriptions-Showroom:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Sources/Subscriptions-Showroom
+        type: folder
+    dependencies:
+      - target: Subscriptions-API
+      - target: Subscriptions-Presentation
+      - target: Subscriptions-Domain
+      - target: Subscriptions-Data
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourcompany.Subscriptions.showroom
+        INFOPLIST_FILE: Sources/Subscriptions-Showroom/Info.plist
