@@ -1,5 +1,5 @@
 {
-  "originHash" : "2c0f199577489746b4a3a62fbd0bc7466db8c7ff33f02a6e31bd74fcebbd7ea7",
+  "originHash" : "fbedf6dbe3648c7f095af86bf12889df56a0643a5b6d9b2ca88a63ecba378e4d",
   "pins" : [
     {
       "identity" : "factory",
@@ -8,6 +8,24 @@
       "state" : {
         "revision" : "ccc898f21992ebc130bc04cc197460a5ae230bcf",
         "version" : "2.5.3"
+      }
+    },
+    {
+      "identity" : "new-arch-mvi-data",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iradell/New-Arch-MVI-Data.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5c714d2242b28e56f49b94d2bfd87670ca1f731b"
+      }
+    },
+    {
+      "identity" : "new-arch-mvi-domain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iradell/New-Arch-MVI-Domain.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a4f9d668a947eaae008ec900bf60cb145fdfecdf"
       }
     },
     {

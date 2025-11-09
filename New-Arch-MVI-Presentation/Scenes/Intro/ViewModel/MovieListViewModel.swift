@@ -6,7 +6,7 @@
 //
 
 import Observation
-import New_Arch_MVI_Domain
+internal import New_Arch_MVI_Domain
 internal import New_Arch_MVI_PresentationCore
 internal import FactoryKit
 import Foundation

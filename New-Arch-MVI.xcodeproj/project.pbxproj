@@ -22,6 +22,8 @@
 		A070CDE72EB1849400D37A60 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = A070CDE62EB1849400D37A60 /* FactoryKit */; };
 		A070CDE82EB1941D00D37A60 /* New_Arch_MVI_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0424AC32EA9885C00CB457A /* New_Arch_MVI_Api.framework */; };
 		A070CDEE2EB1957D00D37A60 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = A070CDED2EB1957D00D37A60 /* FactoryKit */; };
+		A094A7FB2EC142940079EE60 /* New-Arch-MVI-Domain in Frameworks */ = {isa = PBXBuildFile; productRef = A094A7FA2EC142940079EE60 /* New-Arch-MVI-Domain */; };
+		A094A7FD2EC1429D0079EE60 /* New-Arch-MVI-Data in Frameworks */ = {isa = PBXBuildFile; productRef = A094A7FC2EC1429D0079EE60 /* New-Arch-MVI-Data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A094A7FB2EC142940079EE60 /* New-Arch-MVI-Domain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A094A7FD2EC1429D0079EE60 /* New-Arch-MVI-Data in Frameworks */,
 				A0424B3F2EA990C900CB457A /* New_Arch_MVI_Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +318,7 @@
 			);
 			name = "New-Arch-MVI-Domain";
 			packageProductDependencies = (
+				A094A7FA2EC142940079EE60 /* New-Arch-MVI-Domain */,
 			);
 			productName = "New-Arch-MVI-Domain";
 			productReference = A0424AE82EA9889300CB457A /* New_Arch_MVI_Domain.framework */;
@@ -338,6 +343,7 @@
 			);
 			name = "New-Arch-MVI-Data";
 			packageProductDependencies = (
+				A094A7FC2EC1429D0079EE60 /* New-Arch-MVI-Data */,
 			);
 			productName = "New-Arch-MVI-Data";
 			productReference = A0424AFA2EA9889F00CB457A /* New_Arch_MVI_Data.framework */;
@@ -415,6 +421,8 @@
 				A04477AD2EAAD61E00E9EBCD /* XCRemoteSwiftPackageReference "Factory" */,
 				A06CE7852EAE7F09009E73B2 /* XCRemoteSwiftPackageReference "New-Arch-MVI-PresentationCore" */,
 				A00749E92EB2A97600E50645 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Navigation" */,
+				A094A7F82EC142410079EE60 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Data" */,
+				A094A7F92EC1425C0079EE60 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Domain" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A0424AB12EA9883200CB457A /* Products */;
@@ -1239,6 +1247,22 @@
 				kind = branch;
 			};
 		};
+		A094A7F82EC142410079EE60 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Data" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iradell/New-Arch-MVI-Data.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A094A7F92EC1425C0079EE60 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Domain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iradell/New-Arch-MVI-Domain.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1261,6 +1285,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A04477AD2EAAD61E00E9EBCD /* XCRemoteSwiftPackageReference "Factory" */;
 			productName = FactoryKit;
+		};
+		A094A7FA2EC142940079EE60 /* New-Arch-MVI-Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A094A7F92EC1425C0079EE60 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Domain" */;
+			productName = "New-Arch-MVI-Domain";
+		};
+		A094A7FC2EC1429D0079EE60 /* New-Arch-MVI-Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A094A7F82EC142410079EE60 /* XCRemoteSwiftPackageReference "New-Arch-MVI-Data" */;
+			productName = "New-Arch-MVI-Data";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
