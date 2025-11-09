@@ -16,7 +16,7 @@ struct MovieListView<ViewModel: MovieListViewModel>: View {
     // MARK: - Body
     var body: some View {
         content
-            .task {
+            .onLoad {
                 viewModel.onLoad()
             }
             .refreshable {
