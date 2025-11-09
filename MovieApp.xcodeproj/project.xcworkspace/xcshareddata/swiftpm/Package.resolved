@@ -1,0 +1,51 @@
+{
+  "originHash" : "b2ac078cf276fd4275e35d545890f96b8675182bdc4f1c3cdb60b255997c0cd5",
+  "pins" : [
+    {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Factory.git",
+      "state" : {
+        "revision" : "ccc898f21992ebc130bc04cc197460a5ae230bcf",
+        "version" : "2.5.3"
+      }
+    },
+    {
+      "identity" : "new-arch-mvi-data",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iradell/New-Arch-MVI-Data",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5c714d2242b28e56f49b94d2bfd87670ca1f731b"
+      }
+    },
+    {
+      "identity" : "new-arch-mvi-domain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iradell/New-Arch-MVI-Domain",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a4f9d668a947eaae008ec900bf60cb145fdfecdf"
+      }
+    },
+    {
+      "identity" : "new-arch-mvi-navigation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iradell/New-Arch-MVI-Navigation",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e645ab17d4887d63b87c03db52854b422a258f7b"
+      }
+    },
+    {
+      "identity" : "new-arch-mvi-presentationcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iradell/New-Arch-MVI-PresentationCore",
+      "state" : {
+        "branch" : "main",
+        "revision" : "af0b7f5af7c8c8f57d630b20ee97170bc15e5dbc"
+      }
+    }
+  ],
+  "version" : 3
+}

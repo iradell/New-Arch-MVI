@@ -1,8 +1,8 @@
-# New-Arch-MVI - iOS Project Documentation
+# MovieApp - iOS Project Documentation
 
 ## Project Overview
 
-**New-Arch-MVI** is a modern iOS application implementing the **MVI (Model-View-Intent)** architecture pattern using SwiftUI. The project demonstrates clean architecture principles with a modular, framework-based structure separating concerns across Domain, Data, and Presentation layers.
+**MovieApp** is a modern iOS application implementing the **MVI (Model-View-Intent)** architecture pattern using SwiftUI. The project demonstrates clean architecture principles with a modular, framework-based structure separating concerns across Domain, Data, and Presentation layers.
 
 **Platform:** iOS/iPadOS (SwiftUI)
 **Architecture:** MVI (Model-View-Intent)
@@ -87,13 +87,13 @@ final class DefaultMovieListViewModel: MovieListViewModel {
 ## Project Structure
 
 ```
-New-Arch-MVI/
-├── New-Arch-MVI/                    # Main app target (entry point)
-├── New-Arch-MVI-Showroom/          # Demo/preview app
-├── New-Arch-MVI-Api/               # Container & DI configuration
-├── New-Arch-MVI-Domain/            # Business logic layer
-├── New-Arch-MVI-Data/              # Data access & repositories
-└── New-Arch-MVI-Presentation/      # UI components & ViewModels
+MovieApp/
+├── MovieApp/                    # Main app target (entry point)
+├── MovieApp-Showroom/          # Demo/preview app
+├── MovieApp-Api/               # Container & DI configuration
+├── MovieApp-Domain/            # Business logic layer
+├── MovieApp-Data/              # Data access & repositories
+└── MovieApp-Presentation/      # UI components & ViewModels
 ```
 
 ### Module Responsibilities
@@ -154,7 +154,7 @@ final class DefaultMovieListViewFactory: MovieListViewFactory {
 }
 ```
 
-**Location:** `New-Arch-MVI-Presentation/Scenes/{Feature}/Factory/`
+**Location:** `MovieApp-Presentation/Scenes/{Feature}/Factory/`
 
 ### 3. Generic Navigation System
 
@@ -174,7 +174,7 @@ class Router<Destination: Hashable & Identifiable> {
 }
 ```
 
-**Location:** `New-Arch-MVI-Presentation/Navigation/Router.swift`
+**Location:** `MovieApp-Presentation/Navigation/Router.swift`
 
 **DestinationResolver** (Maps destinations to views):
 ```swift
@@ -193,7 +193,7 @@ struct AppDestinationResolver: DestinationResolver {
 }
 ```
 
-**Location:** `New-Arch-MVI-Presentation/Navigation/Resolver/AppDestinationResolver.swift`
+**Location:** `MovieApp-Presentation/Navigation/Resolver/AppDestinationResolver.swift`
 
 **Usage in Views:**
 ```swift
@@ -218,13 +218,13 @@ extension Container {
 @InjectedObservable(\.router) private var router
 ```
 
-**Location:** `New-Arch-MVI-Api/Container/Container.swift`
+**Location:** `MovieApp-Api/Container/Container.swift`
 
 ## Current Features
 
 ### Movie List Feature (FirstView)
 
-**Location:** `New-Arch-MVI-Presentation/Scenes/FirstView/`
+**Location:** `MovieApp-Presentation/Scenes/FirstView/`
 
 **Components:**
 - `MovieListView.swift` - Main UI with grid and carousel
@@ -264,7 +264,7 @@ Movies include classics like "The Shawshank Redemption", "The Godfather", "The D
 
 ### Presentation Layer
 ```
-New-Arch-MVI-Presentation/
+MovieApp-Presentation/
 ├── Core/
 │   ├── ViewModel.swift              # Base ViewModel protocol
 │   ├── ViewFactory.swift            # Base Factory protocol
@@ -294,7 +294,7 @@ New-Arch-MVI-Presentation/
 
 ### Domain Layer
 ```
-New-Arch-MVI-Domain/
+MovieApp-Domain/
 ├── Models/                          # Business domain models
 │   └── MovieItem.swift
 ├── Repository/                      # Repository interfaces (protocols)
@@ -303,7 +303,7 @@ New-Arch-MVI-Domain/
 
 ### Data Layer
 ```
-New-Arch-MVI-Data/
+MovieApp-Data/
 ├── Repository/                      # Repository implementations
 ├── ApiModel/                        # API response models
 ├── Mapper/                          # ApiModel → DomainModel mapping
@@ -312,7 +312,7 @@ New-Arch-MVI-Data/
 
 ### Api Layer
 ```
-New-Arch-MVI-Api/
+MovieApp-Api/
 ├── Container/
 │   └── Container.swift              # DI configuration
 ├── FlowCoordinator/                 # App flow management
@@ -577,5 +577,5 @@ private var content: some View {
 - State updates MUST be on @MainActor
 - File organization is strict - follow the Scenes/{Feature}/{Layer}/ structure
 - Many files are placeholders - check for empty implementations before assuming functionality exists
-- The main app entry point (New_Arch_MVIApp.swift) currently shows "Hello, world!" - navigation to MovieListView needs integration
+- The main app entry point (MovieAppApp.swift) currently shows "Hello, world!" - navigation to MovieListView needs integration
 - Sample data uses TMDB image URLs (https://image.tmdb.org/t/p/w500/...)

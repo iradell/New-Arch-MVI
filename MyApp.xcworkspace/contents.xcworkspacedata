@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:New-Arch-MVI.xcodeproj">
+      location = "group:MovieApp.xcodeproj">
    </FileRef>
 </Workspace>
